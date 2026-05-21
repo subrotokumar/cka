@@ -66,7 +66,7 @@ To get the most out of this lecture, be comfortable with **YAML**—it’s the f
 
 ## Behind the Scenes of kubectl get pods (Why It Matters for JSONPath)
 
-![Alt text](/images/59a.png)
+![Alt text](/cka/images/59a.png)
 
 **From the moment **Shwetangi runs `kubectl get pods`** — what happens**
 
