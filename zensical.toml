@@ -1,0 +1,200 @@
+# =============================================================================
+# CKA Certification — Zensical Configuration
+# =============================================================================
+
+[project]
+
+site_name = "CKA Certification"
+
+docs_dir = "docs"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Docker Foundations" = [
+    { "Day 1 · Docker Fundamentals" = "Day 01/README.md" },
+    { "Day 2 · First Dockerfile & Docker Hub" = "Day 02/README.md" },
+    { "Day 3 · Docker Flags & Exposing Containers" = "Day 03/README.md" },
+    { "Day 4 · CMD vs ENTRYPOINT" = "Day 04/README.md" },
+    { "Day 5 · Multi-Stage Builds & Optimization" = "Day 05/README.md" },
+  ] },
+  { "Kubernetes Basics" = [
+    { "Day 6 · Hello Kubernetes" = "Day 06/README.md" },
+    { "Day 7 · Architecture & Deployment Workflow" = "Day 07/README.md" },
+    { "Day 8 · Kind Cluster & Kubernetes Context" = "Day 08/README.md" },
+    { "Day 9 · YAML, Imperative vs Declarative" = "Day 09/README.md" },
+    { "Day 10 · ReplicationController, ReplicaSets & Deployments" = "Day 10/README.md" },
+    { "Day 11 · Microservices & 3-Tier Architecture" = "Day 11/README.md" },
+    { "Day 12 · Services Deep Dive" = "Day 12/README.md" },
+    { "Day 13 · Imperative Commands & Troubleshooting" = "Day 13/README.md" },
+    { "Day 14 · Namespaces" = "Day 14/README.md" },
+  ] },
+  { "Scheduling & Resources" = [
+    { "Day 15 · Manual Scheduling & Static Pods" = "Day 15/README.md" },
+    { "Day 16 · Taints & Tolerations" = "Day 16/README.md" },
+    { "Day 17 · Node Selector & Node Affinity" = "Day 17/README.md" },
+    { "Day 18 · Taints vs Node Affinity" = "Day 18/README.md" },
+    { "Day 19 · Requests, Limits & LimitRange" = "Day 19/README.md" },
+    { "Day 20 · HPA & VPA Autoscaling" = "Day 20/README.md" },
+  ] },
+  { "Advanced Pods" = [
+    { "Day 21 · Multi-Container Pods" = "Day 21/README.md" },
+    { "Day 22 · Pod Lifecycle & Restart Policies" = "Day 22/README.md" },
+    { "Day 23 · Health Probes" = "Day 23/README.md" },
+    { "Day 24 · Docker Volumes" = "Day 24/README.md" },
+    { "Day 25 · CNI, CSI, CRI & Extensions" = "Day 25/README.md" },
+  ] },
+  { "Storage" = [
+    { "Day 26 · Ephemeral Storage: emptyDir & downwardAPI" = "Day 26/README.md" },
+    { "Day 27 · Persistent Storage: PV, PVC & StorageClass" = "Day 27/README.md" },
+    { "Day 28 · ConfigMaps & Secrets" = "Day 28/README.md" },
+    { "Day 29 · DaemonSet, Job & CronJob" = "Day 29/README.md" },
+    { "Day 30 · HTTPS, SSH & Encryption" = "Day 30/README.md" },
+  ] },
+  { "Security & TLS" = [
+    { "Day 31 · TLS Masterclass Part 1" = "Day 31/README.md" },
+    { "Day 32 · TLS Masterclass Part 2: mTLS & kubeconfig" = "Day 32/README.md" },
+    { "Day 33 · TLS Masterclass Part 3: Private CAs & mTLS" = "Day 33/README.md" },
+    { "Day 34 · TLS Masterclass Part 4: CSR & External Access" = "Day 34/README.md" },
+    { "Day 35 · Authorization Modes & Kubernetes API" = "Day 35/README.md" },
+    { "Day 36 · RBAC Deep Dive" = "Day 36/README.md" },
+    { "Day 37 · Service Accounts & Authentication" = "Day 37/README.md" },
+    { "Day 38 · Admission Controllers" = "Day 38/README.md" },
+    { "Day 39 · Custom Resources & CRDs" = "Day 39/README.md" },
+    { "Day 40 · Kubernetes Operators" = "Day 40/README.md" },
+  ] },
+  { "Advanced Topics" = [
+    { "Day 41 · Pod Security & Linux Capabilities" = "Day 41/README.md" },
+    { "Day 42 · Kustomize" = "Day 42/README.md" },
+    { "Day 43 · Helm Charts" = "Day 43/README.md" },
+    { "Day 44 · StatefulSets" = "Day 44/README.md" },
+    { "Day 45 · Private Image Pulls & imagePullSecrets" = "Day 45/README.md" },
+    { "Day 46 · Pod Priority & Preemption" = "Day 46/README.md" },
+    { "Day 47 · Network Policies" = "Day 47/README.md" },
+    { "Day 48 · Kubernetes DNS" = "Day 48/README.md" },
+  ] },
+  { "Ingress & Networking" = [
+    { "Day 49 · Ingress Part 1: Concepts & Flow" = "Day 49/README.md" },
+    { "Day 50 · Ingress Part 2: Path-Based Routing on EKS" = "Day 50/README.md" },
+    { "Day 51 · Ingress Part 3: TLS & Subdomain Routing" = "Day 51/README.md" },
+    { "Day 52 · Gateway API Part 1" = "Day 52/README.md" },
+    { "Day 53 · Gateway API Part 2: NGINX Gateway Fabric" = "Day 53/README.md" },
+  ] },
+  { "Cluster Administration" = [
+    { "Day 54 · Build a Cluster with kubeadm & Calico" = "Day 54/README.md" },
+    { "Day 55 · Cluster Upgrades with kubeadm" = "Day 55/README.md" },
+    { "Day 56 · Monitoring & Logging" = "Day 56/README.md" },
+    { "Day 57 · Control Plane Troubleshooting" = "Day 57/README.md" },
+    { "Day 58 · Data Plane Troubleshooting" = "Day 58/README.md" },
+    { "Day 59 · JSONPath with kubectl" = "Day 59/README.md" },
+  ] },
+]
+
+# ----------------------------------------------------------------------------
+# Theme
+# ----------------------------------------------------------------------------
+[project.theme]
+
+language = "en"
+
+[project.theme.font]
+code = "JetBrains Mono"
+
+[project.theme.icon]
+logo = "fontawesome/solid/dharmachakra"
+repo = "fontawesome/solid/terminal"
+
+features = [
+  "announce.dismiss",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  # "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "toc.follow",
+  "toc.integrate",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# ----------------------------------------------------------------------------
+# Repository
+# ----------------------------------------------------------------------------
+[project.repo]
+url = "https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025"
+name = "CloudWithVarJosh/CKA-Certification-Course-2025"
+
+# ----------------------------------------------------------------------------
+# Social links
+# ----------------------------------------------------------------------------
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/CloudWithVarJosh/CKA-Certification-Course-2025"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@CloudWithVarJosh"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/varun-joshi-2b516752/"
+
+# ----------------------------------------------------------------------------
+# Markdown Extensions
+# ----------------------------------------------------------------------------
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.tilde]
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
