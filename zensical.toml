@@ -6,6 +6,7 @@
 
 site_name = "CKA Certification"
 docs_dir = "docs"
+site_url = "https://subrotokumar.github.io/cka"
 
 nav = [
   { "Home" = "index.md" },
